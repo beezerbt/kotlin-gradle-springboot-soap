@@ -14,6 +14,7 @@ class JAXBMarshallerTest {
         Assertions.assertTrue(outputFile.exists())
         outputFile.forEachLine { println(it) }
     }
+
     @Test
     fun marshalCobRequest() {
         val cobMarshaller = COBJAXBBillingOrderMarshaller()
