@@ -8,8 +8,7 @@ import org.springframework.oxm.jaxb.Jaxb2Marshaller
 
 @Profile("test")
 @Configuration
-class CobClientTestConfig {
-
+class MarshallerITonfig {
     @Bean
     @Primary
     fun marshaller(): Jaxb2Marshaller {
@@ -17,11 +16,5 @@ class CobClientTestConfig {
         marshaller.contextPath =
             "bc.web.api.capability.business.b010_02.objects.requestsubmitbillingordering.flv000624.v1"
         return marshaller
-    }
-
-    @Bean
-    @Primary
-    fun stringyThing(): String {
-        return String()
     }
 }

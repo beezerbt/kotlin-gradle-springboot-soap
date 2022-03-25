@@ -18,6 +18,7 @@ repositories {
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web-services")
+	//The following 3 are NEEDED for the tests to be able to resolve against JAXB
 	implementation("javax.xml.bind:jaxb-api:2.3.0")
 	implementation("javax.activation:activation:1.1")
 	implementation("org.glassfish.jaxb:jaxb-runtime:2.3.0")
@@ -25,6 +26,7 @@ dependencies {
 	//implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	testImplementation("junit:junit:4.13.1")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	testImplementation("org.mockito:mockito-junit-jupiter:4.3.1")
 }
 
 tasks.withType<KotlinCompile> {
