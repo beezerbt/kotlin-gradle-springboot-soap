@@ -2,6 +2,7 @@ package com.proximus.cloudfusionplus.service.connector.cob
 
 import bc.web.api.capability.business.b010_02.services.billingordering.flv000624.v1.RequestDataSubmitBillingOrderingType
 import org.springframework.stereotype.Service
+import service.connector.cob.CobClient
 
 @Service
 class CobService(private val cobClient: CobClient) {
