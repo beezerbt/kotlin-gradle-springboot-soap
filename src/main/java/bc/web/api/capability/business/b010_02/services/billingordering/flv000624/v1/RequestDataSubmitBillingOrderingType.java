@@ -31,7 +31,7 @@ import javax.xml.bind.annotation.*;
  * 
  * 
  */
-@XmlRootElement(name="billingOrderRequest")
+@XmlRootElement(name="BillingOrder")
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "RequestDataSubmitBillingOrderingType", propOrder = {
     "serviceContext",
