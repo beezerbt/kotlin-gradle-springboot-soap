@@ -14,7 +14,7 @@ class OXMCOBClient: WebServiceGatewaySupport() {
         requestDataSubmitBillingOrderingType.serviceData = SubmitBillingOrderingServiceDataRequestType()
         requestDataSubmitBillingOrderingType.serviceData.billingOrder = BillingOrderType()
         requestDataSubmitBillingOrderingType.serviceData.billingOrder.identifier = BillingOrderIdentifierType()
-        requestDataSubmitBillingOrderingType.serviceData.billingOrder.identifier.id = "HCMOR-00000000000002-1"
+        requestDataSubmitBillingOrderingType.serviceData.billingOrder.identifier.id = "HCMOR-00000000000772-1"
         return webServiceTemplate
             .marshalSendAndReceive(requestDataSubmitBillingOrderingType) as ResponseDataSubmitBillingOrderingType
     }
