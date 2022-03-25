@@ -22,6 +22,7 @@ dependencies {
 	implementation("javax.xml.bind:jaxb-api:2.3.0")
 	implementation("javax.activation:activation:1.1")
 	implementation("org.glassfish.jaxb:jaxb-runtime:2.3.0")
+	implementation("org.apache.logging.log4j:log4j-core:2.16.0")
 	//implementation("org.jetbrains.kotlin:kotlin-reflect")
 	//implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	testImplementation("junit:junit:4.13.1")
