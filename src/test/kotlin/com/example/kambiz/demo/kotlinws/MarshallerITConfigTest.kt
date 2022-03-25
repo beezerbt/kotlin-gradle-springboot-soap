@@ -12,21 +12,22 @@ import org.springframework.oxm.jaxb.Jaxb2Marshaller
 import org.springframework.test.context.ActiveProfiles
 import org.springframework.test.context.ContextConfiguration
 import org.springframework.test.context.junit.jupiter.SpringExtension
+import javax.xml.bind.Marshaller
 
 @ActiveProfiles("test")
 @ExtendWith(SpringExtension::class)
 @ContextConfiguration(classes = [MarshallerITonfig::class])
 class MarshallerITConfigTest {
 
-    @Autowired
-    private val myMarshaller: Jaxb2Marshaller?=null
+    /*@Autowired
+    private val myMarshaller: Marshaller?=null
 
     @Test
     fun contextLoads() {
         assertNotNull(myMarshaller)
-    }
+    }*/
 
-    @Test
+  /*  @Test
     fun givenMarshallerInstance_whenUsingItToInstantiateCobClient_thenCobClientInstantiatedSuccessfully() {
         var cobClient: CobClient
         cobClient = CobClient(myMarshaller!!)
@@ -42,7 +43,7 @@ class MarshallerITConfigTest {
         assertNotNull(mockedRequestDataSubmitBillingOrderingType)
         var response = cobClient.doBillingOrderRequest(mockedRequestDataSubmitBillingOrderingType)
         assertNotNull(response)
-    }
+    }*/
 
 
 }

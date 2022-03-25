@@ -8,10 +8,7 @@
 
 package bc.web.api.capability.business.b010_02.services.billingordering.flv000624.v1;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 
 
 /**
@@ -34,6 +31,7 @@ import javax.xml.bind.annotation.XmlType;
  * 
  * 
  */
+@XmlRootElement(name="billingOrderRequest")
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "RequestDataSubmitBillingOrderingType", propOrder = {
     "serviceContext",
