@@ -1,3 +1,5 @@
+package com.entity;
+
 import javax.xml.bind.annotation.*;
 import java.util.Date;
 

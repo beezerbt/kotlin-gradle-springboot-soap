@@ -1,7 +1,6 @@
 package com.example.kambiz.demo.spring.oxm
 
-import Book
-import org.junit.jupiter.api.Assertions
+import com.entity.Book
 import java.io.FileOutputStream
 import java.io.IOException
 import javax.xml.bind.JAXBException
@@ -19,7 +18,7 @@ class BookOXMMarshalling {
         var fos: FileOutputStream? = null
         try {
             fos = FileOutputStream("C:\\temp\\oxm_book.xml")
-            oXMMarshaller.getCastorMarshaller()?.marshal(book, StreamResult(fos))
+            oXMMarshaller.getCastorMarshaller("com.entity")?.marshal(book, StreamResult(fos))
         } finally {
             fos!!.close()
         }

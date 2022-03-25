@@ -1,6 +1,6 @@
 package com.exmaple.kambiz.demo.jaxb
 
-import Book
+import com.entity.Book
 import java.io.File
 import java.io.IOException
 import javax.xml.bind.JAXBContext
