@@ -10,7 +10,7 @@ class JAXBMarshallerTest {
     fun marshalBook() {
         val book = BookJAXBMarshaller()
         book.marshal()
-        val outputFile = File("C:\\temp\\book.xml")
+        val outputFile = File("C:\\temp\\jaxb_book.xml")
         Assertions.assertTrue(outputFile.exists())
         outputFile.forEachLine { println(it) }
     }
@@ -18,8 +18,17 @@ class JAXBMarshallerTest {
     @Test
     fun marshalCobRequest() {
         val cobMarshaller = COBJAXBBillingOrderMarshaller()
-        cobMarshaller.marshal()
-        val outputFile = File("C:\\temp\\cobRequest.xml")
+        cobMarshaller.marshalRequest()
+        val outputFile = File("C:\\temp\\jaxb_cobRequest.xml")
+        Assertions.assertTrue(outputFile.exists())
+        outputFile.forEachLine { println(it) }
+    }
+
+    @Test
+    fun marshalCobResponse() {
+        val cobMarshaller = COBJAXBBillingOrderMarshaller()
+        cobMarshaller.marshalResponse()
+        val outputFile = File("C:\\temp\\jaxb_cobResponse.xml")
         Assertions.assertTrue(outputFile.exists())
         outputFile.forEachLine { println(it) }
     }
